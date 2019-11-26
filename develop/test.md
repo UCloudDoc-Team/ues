@@ -80,7 +80,7 @@ curl -X GET 'http://<host>:9200/ucloud/information/1'
 curl -X GET 'http://<host>:9200/_search'
 curl -X GET 'http://<host>:9200/ucloud/_search'
 curl -X GET 'http://<host>:9200/ucloud/information/_search'
-curl -X GET 'http://<host>:9200/_sql?sql=select%20*%20from%20ucloud%20limit%2010'
+curl -X GET "http://<host>:9200/_sql" -H 'Content-Type: application/json' -d'select * from ucloud limit 10'
 ```
 
 \_注释：%20 为空格\_
