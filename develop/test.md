@@ -83,7 +83,6 @@ curl -X GET 'http://<host>:9200/ucloud/information/_search'
 curl -X GET "http://<host>:9200/_sql" -H 'Content-Type: application/json' -d'select * from ucloud limit 10'
 ```
 
-\_注释：%20 为空格\_
 
 ### 复杂搜索
 

@@ -15,4 +15,4 @@ kibana打开了，你可以使用它了。
 
 ![image](/images/operate/detail_kibana_2.jpg)
 
-\_\[官网Kibana\](https://www.elastic.co/guide/en/kibana/5.5/index.html)\_
+[官网Kibana](https://www.elastic.co/guide/en/kibana/5.5/index.html)
