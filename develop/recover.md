@@ -82,4 +82,4 @@ Allocation\](<https://www.elastic.co/guide/en/elasticsearch/reference/6.2/disk-a
 如果是磁盘使用率高导致集群出现未分配分片，可以选择修改磁盘使用策略暂时缓解 或 扩容节点个数。
 
 另外，如果确定可以永久关闭部分历史索引数据，也可以通过删除此类索引来恢复集群状态。删除历史索引数据可参考 \_**\[实例运维 -
-历史数据清理\](<https://docs.ucloud.cn/analysis/ues/develop/online>)**\_
+历史数据清理\](<https://docs.ucloud.cn/ues/develop/online>)**\_

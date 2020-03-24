@@ -6,7 +6,7 @@ UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备
 
 ## 一、安装插件
 
-可以通过UES控制台的“插件管理”功能进行UFile插件的安装，插件名称为elasticsearch-repository-ufile，具体操作方法请参考文档[插件管理](/analysis/ues/plugins/manage)章节。
+可以通过UES控制台的“插件管理”功能进行UFile插件的安装，插件名称为elasticsearch-repository-ufile，具体操作方法请参考文档[插件管理](ues/plugins/manage)章节。
 
 ## 二、创建UFile存储空间
 
@@ -27,7 +27,7 @@ UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备
 **（1）存储空间内网域名**
 
 请注意UFile控制台展示的存储空间域名是外网域名，您需要查看UFile文档获取其内网域名，详见UFile文档的[“FAQ” -
-“各机房proxy\_host地址分别是什么？”](/storage_cdn/ufile/faq)一节。
+“各机房proxy\_host地址分别是什么？”](/ufile/faq)一节。
 
 以上述创建的示例存储空间为例，其外网域名为：ues-backup.uae-dubai.ufileos.com，查询得到UFile迪拜的内网域名为：www.internal-uae-dubai.ufileos.com，故示例存储空间的内网域名为：**ues-backup.internal-uae-dubai.ufileos.com**
 ![](/images/plugins/ufile/03-获取存储空间域名.png)
