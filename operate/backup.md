@@ -1,6 +1,6 @@
 
 
-# UFile插件
+# 数据备份
 
 UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备份至UFlie的快照中将数据恢复至Elasticsearch。
 
