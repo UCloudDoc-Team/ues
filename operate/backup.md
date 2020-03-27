@@ -23,6 +23,19 @@ UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot A
 登录[UES控制台](https://console.ucloud.cn/ues/manage)，在目标UES集群的插件管理页面进行UFile插件的安装，具体操作方法可以参考文档[插件管理](/ues/plugins/manage)章节。
 ![](/images/operate/backup/install_ufile_plugin.png)
 
+## 操作步骤
+
+数据备份功能入口：登录[UES控制台](https://console.ucloud.cn/ues/manage)，点击集群列表中目标集群的“详情”按钮，进入集群详情页面，切换至“数据备份”标签页。
+
+### 1.注册仓库
+
+在**“仓库管理”**子页面中，点击**“注册仓库”**按钮，在弹出的对话框中，按照页面提示完成相关信息的填写，点击确认，系统将为该集群创建一个存放快照的仓库。
+
+| 参数 | 说明 |
+| UFile存储空间 | <font color=red>注意：</font> |
+
+
+
 
 
 --------------------------------------------------------------------
