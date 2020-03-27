@@ -1,5 +1,4 @@
 <div class="sidebar_title icon__ues"> ES服务 Elasticsearch</div>
-
 * [概览](/ues/README)
 * 操作指南
     * [创建集群](/ues/operate/create)
@@ -25,20 +24,6 @@
 * [FAQs](/ues/faqs)
 * [Rally压测](/ues/rally)
 * [UES价格](/ues/price)
-        
-
-    
-
-
-
-
-
-
-
-
-
-    
-   
-   
     
         
+
