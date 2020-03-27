@@ -1,6 +1,6 @@
 # 数据备份
 
-UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot API，通过 [elasticsearch-repository-ufile](https://github.com/ufilesdk-dev/elasticsearch-repository-ufile) 插件的支持，按照预先设定的备份计划，定时自动生成快照，保存在 [对象存储 UFile](https://docs.ucloud.cn/ufile/README) 当中，从而实现对UES索引数据的有效备份。
+UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot API，通过[elasticsearch-repository-ufile](https://github.com/ufilesdk-dev/elasticsearch-repository-ufile)插件（以下简称UFile插件）的支持，按照预先设定的备份计划，定时自动生成快照，保存在[对象存储 UFile](https://docs.ucloud.cn/ufile/README)当中，从而实现对UES索引数据的有效备份。
 
 ## 名词释义
 
@@ -8,51 +8,26 @@ UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot A
 
 ### 1.创建UFile存储空间
 
-登录 [UFile控制台](https://console.ucloud.cn/ufile/ufile)，创建用于保存UES快照数据的存储空间。要求：
+登录[UFile控制台](https://console.ucloud.cn/ufile/ufile)，创建用于保存UES快照数据的存储空间。要求：
 （1）存储空间所在地域必须与您需要快照备份的UES集群所在地域保持一致。
 （2）空间类型请选择**”私有空间“**，以确保存储空间内的数据需要得到密钥授权才能访问。
 ![](/images/operate/backup/create_ufile_bucket.png)
+
+### 2.创建UFile令牌
+
+在[令牌管理](https://console.ucloud.cn/ufile/token)页面，创建用于授权访问上述存储空间的令牌，合理设置有效时长，授权访问上述存储空间，并赋予对**所有文件**的**上传、下载、删除、文件列表权限**。
+![](/images/operate/backup/create_ufile_token.png)
+
+### 3.为需要备份的UES集群安装UFile插件
+
+登录[UES控制台](https://console.ucloud.cn/ues/manage)，在目标UES集群的插件管理页面进行UFile插件的安装，具体操作方法可以参考文档[插件管理](/ues/plugins/manage)章节。
+![](/images/operate/backup/install_ufile_plugin.png)
 
 
 
 --------------------------------------------------------------------
 
-# 数据备份
 
-UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备份至UFlie的快照中将数据恢复至Elasticsearch。
-
-## 一、安装插件
-
-可以通过UES控制台的“插件管理”功能进行UFile插件的安装，插件名称为elasticsearch-repository-ufile，具体操作方法请参考文档[插件管理](ues/plugins/manage)章节。
-
-## 二、创建UFile存储空间
-
-### 1.创建存储空间
-
-在UFile控制台创建用于UES数据备份的存储空间，为了确保网络传输质量，请选择**与目标UES集群相同的地域**进行创建。空间类型请选择**“私有空间”**。
-![](/images/plugins/ufile/01-创建ufile存储空间.png)
-
-### 2.创建令牌
-
-在UFile控制台创建用于访问上述存储空间的令牌，请注意选择上述创建的存储进行授权，并在“令牌权限”中勾选“上传”、“下载”、“删除”、“文件列表”等。
-![](/images/plugins/ufile/02-创建ufile令牌.png)
-
-### 3.获取存储空间内网域名及密钥信息
-
-获取并记录以下信息以备使用：
-
-**（1）存储空间内网域名**
-
-请注意UFile控制台展示的存储空间域名是外网域名，您需要查看UFile文档获取其内网域名，详见UFile文档的[“FAQ” -
-“各机房proxy\_host地址分别是什么？”](/ufile/faq)一节。
-
-以上述创建的示例存储空间为例，其外网域名为：ues-backup.uae-dubai.ufileos.com，查询得到UFile迪拜的内网域名为：www.internal-uae-dubai.ufileos.com，故示例存储空间的内网域名为：**ues-backup.internal-uae-dubai.ufileos.com**
-![](/images/plugins/ufile/03-获取存储空间域名.png)
-
-**（2）拥有上述存储空间访问权限的令牌密钥**
-
-在UFile控制台“令牌管理”页面查看令牌的公钥和私钥。
-![](/images/plugins/ufile/04-获取令牌密钥.png)
 
 ## 三、创建仓库
 
