@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__ues">Elasticsearch服务 UES</div>
+<div class="sidebar_title icon__ues"> Elasticsearch服务 UES</div>
 * [概览](/ues/README)
 * 操作指南
     * [创建集群](/ues/operate/create)
