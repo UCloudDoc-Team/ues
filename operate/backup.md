@@ -1,4 +1,21 @@
+# 数据备份
 
+UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot API，通过 [elasticsearch-repository-ufile](https://github.com/ufilesdk-dev/elasticsearch-repository-ufile) 插件的支持，按照预先设定的备份计划，定时自动生成快照，保存在 [对象存储 UFile](https://docs.ucloud.cn/ufile/README) 当中，从而实现对UES索引数据的有效备份。
+
+## 名词释义
+
+## 准备工作
+
+### 1.创建UFile存储空间
+
+登录 [UFile控制台](https://console.ucloud.cn/ufile/ufile)，创建用于保存UES快照数据的存储空间。要求：
+（1）存储空间所在地域必须与您需要快照备份的UES集群所在地域保持一致。
+（2）空间类型请选择**”私有空间“**，以确保存储空间内的数据需要得到密钥授权才能访问。
+![](/images/operate/backup/create_ufile_bucket.png)
+
+
+
+--------------------------------------------------------------------
 
 # 数据备份
 
