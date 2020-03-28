@@ -1,4 +1,4 @@
-# 数据备份
+# 数据恢复
 
 UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot API，通过[elasticsearch-repository-ufile](https://github.com/ufilesdk-dev/elasticsearch-repository-ufile)插件（以下简称UFile插件）的支持，按照预先设定的备份计划，定时自动生成快照，保存在[对象存储 UFile](https://docs.ucloud.cn/ufile/README)当中，从而实现对UES索引数据的有效备份。
 

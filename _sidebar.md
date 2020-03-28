@@ -7,7 +7,9 @@
     * [集群操作](/ues/operate/dealservice)
     * [Kibana](/ues/operate/kibana)
     * [监控告警](/ues/operate/monitor)
-    * [数据备份](/ues/operate/backup)
+    * 数据备份与恢复
+        * [数据备份](/ues/operate/backup)
+        * [数据恢复](/ues/operate/restore)
 * 插件指南
     * [预置插件](/ues/plugins/default)
     * [插件管理](/ues/plugins/manage)
