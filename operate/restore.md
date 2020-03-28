@@ -26,7 +26,7 @@
 
 除此以外，无法将高版本集群创建的快照恢复到低版本集群中，也无法将低版本集群创建的快照恢复到跨 2 个或者更多的大版本号的高版本集群中。
 
-使用UES的数据备份功能生成的快照，可以通过[UES控制台](https://console.ucloud.cn/ues/manage)：**数据备份 -\> 快照管理 -\> 快照详情**查看，或者接下来介绍的**“查看指定仓库中的所有快照”**命令查看。
+使用UES的数据备份功能生成的快照的版本信息，可以通过[UES控制台](https://console.ucloud.cn/ues/manage)：**数据备份 -\> 快照管理 -\> 快照详情**查看，或者接下来介绍的**“查看指定仓库中的所有快照”**命令查看。
 
 ## 操作步骤
 
@@ -92,10 +92,6 @@
         "rename_replacement": "restored_index_$1"
     }
 
-该命令返回结果样例：
-
-![](/images/operate/restore/sample_restore_with_parameters.png)
-
 | 参数 | 说明 |
 | ----- | ----- |
 | indices | 指定需要恢复的快照名称，支持多索引语法。 |
@@ -103,6 +99,10 @@
 | include_global_state | 控制是否恢复集群的全局状态。 |
 | rename_pattern | 使用正则表达式匹配需要重命名的索引。 |
 | rename_replacement | 指定重命名规则。 |
+
+该命令返回结果样例：
+
+![](/images/operate/restore/sample_restore_with_parameters.png)
 
 ## 参考信息
 
