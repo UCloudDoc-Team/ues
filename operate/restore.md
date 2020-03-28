@@ -55,7 +55,7 @@
 
 命令样例：
 
-    GET /_snapshot/\<my_first_repository\>/_all
+    GET /_snapshot/<my_first_repository>/_all
 
 命令返回结果样例：
 
@@ -73,7 +73,7 @@
 
 命令样例：
 
-    POST /_snapshot/\<my_first_repository\>/\<daily_backup_202003281600\>/_restore
+    POST /_snapshot/<my_first_repository>/<daily_backup_202003281600>/_restore
 
 命令返回结果样例：
 
@@ -83,7 +83,7 @@
 
 带有更多参数的命令样例：
 
-    POST /_snapshot/\<my_first_repository\>/\<daily_backup_202003281600\>/_restore?wait_for_completion=true
+    POST /_snapshot/<my_first_repository>/<daily_backup_202003281600>/_restore?wait_for_completion=true
     {
         "indices": "index_2,index_3",
         "ignore_unavailable": true,
