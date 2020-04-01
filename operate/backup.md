@@ -124,9 +124,9 @@ static\_name：索引名称中的静态部分
 
 date\_math\_expr：动态的日期表达式
 
-date_format：日期格式，默认是YYYY.MM.dd
+date_format：日期格式（可选），默认是YYYY.MM.dd
 
-time_zone：时区，默认是UTC
+time_zone：时区（可选），默认是UTC
 
 样例（**表达式两端的尖括号 \<\> 必不可少**）：
 
@@ -134,7 +134,7 @@ time_zone：时区，默认是UTC
 
 | 表达式 | 表达式的值 |
 | ----- | ----- |
-| \<index\_{now/d}\> | index\_2020.02.20 |
+| <index\_{now/d}> | index\_2020.02.20 |
 | \<index\_{now-1d}\> | index\_2020.02.19 |
 | \<index\_{now/M}\> | index\_2020.02.01 |
 | \<index\_{now/M{YYYY.MM}}\> | index\_2020.02 |
