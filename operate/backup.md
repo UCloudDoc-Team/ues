@@ -135,9 +135,9 @@ time_zone：时区（可选），默认是UTC
 | 表达式 | 表达式的值 |
 | ----- | ----- |
 | <index\_{now/d}> | index\_2020.02.20 |
-| \<index\_{now-1d}\> | index\_2020.02.19 |
-| \<index\_{now/M}\> | index\_2020.02.01 |
-| \<index\_{now/M{YYYY.MM}}\> | index\_2020.02 |
+| <index\_{now-1d}> | index\_2020.02.19 |
+| <index\_{now/M}> | index\_2020.02.01 |
+| <index\_{now/M{YYYY.MM}}> | index\_2020.02 |
 
 ## 参考信息
 
