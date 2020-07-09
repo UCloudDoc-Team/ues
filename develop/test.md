@@ -1,11 +1,8 @@
+# ES测试
 
+ES集群创建成功后（创建参考操作指南），可以进行集群可用性的初步测试。这里示例通过一台可以访问 ues 的 uhost 进行 curl 调用命令测试。
 
-## ES测试
-
-ES集群创建成功后（创建参考操作指南），可以进行集群可用性的初步测试。这里示例通过一台可以访问 ues 的 uhost
-进行curl调用命令测试。
-
-### 集群状态测试
+## 集群状态测试
 
 ```
 curl -s -XGET 'http://<host>:9200/_cluster/health?pretty'
@@ -35,7 +32,7 @@ curl -s -XGET 'http://<host>:9200/_cluster/health?pretty'
 
 说明集群是正常的运行状态了，之后进行测试数据写入。
 
-### 索引一个文档
+## 索引一个文档
 
 例，索引为 "ucloud"，类型为 "information"，选择"1"作为ID的编号。这时，请求就是这样的：
 
@@ -57,7 +54,7 @@ http://<host>:9200/ucloud/information/1 \
 {"_index":"ucloud","_type":"information","_id":"1","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"created":true}
 ```
 
-### 检索文档
+## 检索文档
 
 ```
 curl -X GET 'http://<host>:9200/ucloud/information/1'
@@ -74,7 +71,7 @@ curl -X GET 'http://<host>:9200/ucloud/information/1'
 }}
 ```
 
-### 搜索文档
+## 搜索文档
 
 ```
 curl -X GET 'http://<host>:9200/_search'
@@ -84,11 +81,11 @@ curl -X GET "http://<host>:9200/_sql" -H 'Content-Type: application/json' -d'sel
 ```
 
 
-### 复杂搜索
+## 复杂搜索
 
 复杂搜索需使用POST方法，详情请参考 功能文档 API文档
 
-### 更新文档
+## 更新文档
 
 ```
 curl -X PUT \
@@ -108,7 +105,7 @@ http://<host>:9200/ucloud/information/1 \
 {"_index":"ucloud","_type":"information","_id":"1","_version":2,"result":"updated","_shards":{"total":2,"successful":2,"failed":0},"created":false}
 ```
 
-### 删除
+## 删除
 
 删除文档
 

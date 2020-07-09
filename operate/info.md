@@ -1,10 +1,8 @@
-
-
-## 集群信息
+# 集群信息
 
 控制台会给出集群的基本信息展示。点击详情进入详情页，我们会提供集群概况、节点信息和集群监控视图等信息。
 
-### 基本信息
+## 基本信息
 
 ![image](/images/operate/detail_baseinfo_1.jpg)
 
@@ -12,7 +10,7 @@
 完全相同）可以自定义，如上图标注。请注意此资源名不是Elasticsearch配置文件中的集群名称（配置文件中的
 cluster.name 默认为 \*\* 资源ID \*\*）。
 
-### 节点配置
+## 节点配置
 
 ![image](/images/operate/detail_configinfo_1.jpg)
 
@@ -20,13 +18,13 @@ cluster.name 默认为 \*\* 资源ID \*\*）。
 
 如果集群是主节点分离类型，标题为数据节点配置，主节点配置不在此栏中显示。
 
-### 付费信息
+## 付费信息
 
 ![image](/images/operate/detail_chargeinfo_1.jpg)
 
 集群付费详情。续费可以到计费系统进行续费、更改计费方式等操作。
 
-### 集群健康
+## 集群健康
 
 ![image](/images/operate/detail_cluster_health_1.jpg)
 
@@ -34,7 +32,7 @@ cluster.name 默认为 \*\* 资源ID \*\*）。
 
 该部分展示了最基础的集群状态、分片数量、正在迁移分片数、未分配分片数等重要集群信息。
 
-### 节点列表
+## 节点列表
 
 ![image](/images/operate/detail_nodelist_1.jpg)
 

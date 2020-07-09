@@ -1,5 +1,3 @@
-
-
 # Rally压测
 
 我们利用 Elasticsearch 官方提供的 benchmark 压测工具

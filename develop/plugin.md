@@ -1,14 +1,12 @@
+# 插件管理
 
-
-## 插件管理
-
-### Elasticsearch-Head
+## Elasticsearch-Head
 
 最新elasticsearch版本（5.0以上）已经不再支持使用内部 **elasticsearch-plugin**
 命令来安装head插件，内置的head插件本质是调用es服务REST
 API包装而形成的图形化管理工具，所以使用head插件需要head管理平台网络和输入的es连接地址是相通的。
 
-### Hadoop HDFS Repository Plugin
+## Hadoop HDFS Repository Plugin
 
 \* 通过REST API定义hdfs存储库的配置：
 
@@ -111,9 +109,9 @@ POST /.kibana/_close
 更详细插件使用请参考 \_\[Hadoop HDFS Repository
 Plugin\](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-snapshots.html\#\_repository\_plugins)\_
 
-### IK Analysis Plugin
+## IK Analysis Plugin
 
-#### 自定义分词词库操作
+### 自定义分词词库操作
 
 通过在 IK 配置文件中提到的如下配置：
 

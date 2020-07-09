@@ -1,14 +1,12 @@
+# 实例迁移
 
-
-## 实例迁移
-
-### 创建索引
+## 创建索引
 
 数据迁移本质是索引的重建，重建索引不会尝试设置目标索引，它不会复制源索引的设置。 所以在操作之前设置目标索引，包括设置映射，分片数，副本等。
 
-### 数据迁移
+## 数据迁移
 
-#### 1\. Reindex from Remoteedit
+### 1\. Reindex from Remoteedit
 
 Reindex支持从远程Elasticsearch集群重建索引：
 
@@ -44,7 +42,7 @@ POST _reindex
 具体使用可参考 \_**\[Reindex from
 Remoteedit\](<https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#reindex-from-remote>)**\_
 
-#### 2\. Elasticsearch-Dump
+### 2\. Elasticsearch-Dump
 
 Elasticsearch-Dump是一个elasticsearch数据导入导出开源工具包。安装、迁移相关执行可以在相同可用区的云主机上进行，使用方便。
 
@@ -84,7 +82,7 @@ elasticdump \
 elasticdump命令其他参数使用参考 \_**\[Elasticdump
 Options\](<https://github.com/taskrabbit/elasticsearch-dump#options>)**\_
 
-#### 3\. Elasticsearch-Migration
+### 3\. Elasticsearch-Migration
 
 Elasticsearch-Migration是基于Go语言开源的工具包。和Elasticsearch-Dump一样，相关操作可以在相同可用区的云主机上进行。
 

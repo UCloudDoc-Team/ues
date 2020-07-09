@@ -1,12 +1,10 @@
-
-
 # 预置插件
 
 UES 提供了插件机制，当前我们的 UES 服务内置了以下常用插件，暂不支持用户自己上传安装插件。
 
 \_\[参考链接\](https://www.elastic.co/guide/en/elasticsearch/plugins/current/index.html)\_
 
-### Analysis Plugins
+## Analysis Plugins
 
   - **analysis-ik**
 
@@ -32,7 +30,7 @@ IK为常用的中文分词插件。需要注意的是，IK插件提供的中文�
 
 Provides stemming for Ukrainian.
 
-### Ingest Plugins
+## Ingest Plugins
 
   - **ingest-attachment**
 
@@ -47,13 +45,13 @@ GeoIP处理器根据Maxmind数据库的数据添加有关IP地址位置的信息
 该插件默认使用由uap-java提供的具有Apache 2.0许可证的regexes.yaml.
 插件处理器从浏览器发送的用户代理字符串中提取其Web请求的详细信息。该处理器默认在user\_agent字段下添加此信息。
 
-### Elasticsearch Head
+## Elasticsearch Head
 
 elasticsearch-head是比较常用的集群管理工具。
 
 官方ES在5.0以上版本中已不再提供直接安装head插件。内置的head插件做为一个独立的工程运行，head插件默认端口为9100。
 
-### SQL
+## SQL
 
 可以使用户以类SQL语法查询、分析存储在Elasticsearch中的数据。
 
@@ -126,7 +124,7 @@ SELECT * FROM indexName/type
 
 **\_该插件使用来自开源项目\_**，\_\[参考链接\](https://github.com/NLPchina/elasticsearch-sql)\_
 
-### Snapshot/Restore Repository Plugins
+## Snapshot/Restore Repository Plugins
 
   - **Hadoop HDFS Repository Plugin**
 
