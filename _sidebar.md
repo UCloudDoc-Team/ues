@@ -1,4 +1,3 @@
-<div class="sidebar_title icon__ues">Elasticsearch服务 UES</div>
 
 * [概览](/ues/README)
 * [产品简介](/ues/introduction)
