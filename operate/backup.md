@@ -1,6 +1,6 @@
 # 数据备份
 
-UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot API，通过[elasticsearch-repository-ufile](https://github.com/ufilesdk-dev/elasticsearch-repository-ufile)插件（以下简称UFile插件）的支持，按照预先设定的备份计划，定时自动生成快照，保存在[对象存储 UFile](https://docs.ucloud.cn/ufile/README)当中，从而实现对UES索引数据的有效备份。
+UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot API，通过[elasticsearch-repository-ufile](https://github.com/ufilesdk-dev/elasticsearch-repository-ufile)插件（以下简称US3插件）的支持，按照预先设定的备份计划，定时自动生成快照，保存在[对象存储 US3](https://docs.ucloud.cn/ufile/README)当中，从而实现对UES索引数据的有效备份。
 
 ## 名词释义
 
@@ -8,27 +8,27 @@ UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot A
 
 **仓库（repository）**：仓库是用于存放快照文件的存储空间，必须先创建一个仓库才能进行快照的备份操作。通过安装插件，ES可以支持使用不同类型的存储系统作为快照仓库。
 
-**对象存储 UFile**：对象存储 UFile是UCloud提供的非结构化文件云存储的服务，通过安装UFile插件，UES使用UFile作为存放快照的仓库。
+**对象存储 US3**：对象存储 US3是UCloud提供的非结构化文件云存储的服务，通过安装US3插件，UES使用US3作为存放快照的仓库。
 
 ## 准备工作
 
-### 1.创建UFile存储空间
+### 1.创建US3存储空间
 
-登录[UFile控制台](https://console.ucloud.cn/ufile/ufile)，创建用于保存UES快照数据的存储空间。要求：
+登录[US3控制台](https://console.ucloud.cn/ufile/ufile)，创建用于保存UES快照数据的存储空间。要求：
 （1）存储空间所在地域必须与您需要快照备份的UES集群所在地域保持一致。
 （2）空间类型请选择**”私有空间“**，以确保存储空间内的数据需要得到密钥授权才能访问。
 
 ![](/images/operate/backup/create_ufile_bucket.png)
 
-### 2.创建UFile令牌
+### 2.创建US3令牌
 
 在[令牌管理](https://console.ucloud.cn/ufile/token)页面，创建用于授权访问上述存储空间的令牌，合理设置有效时长，授权访问上述存储空间，并赋予对**所有文件**的**上传、下载、删除、文件列表权限**。
 
 ![](/images/operate/backup/create_ufile_token.png)
 
-### 3.为需要备份的UES集群安装UFile插件
+### 3.为需要备份的UES集群安装US3插件
 
-登录[UES控制台](https://console.ucloud.cn/ues/manage)，在目标UES集群的插件管理页面进行UFile插件的安装，具体操作方法可以参考文档[插件管理](/ues/plugins/manage)章节。
+登录[UES控制台](https://console.ucloud.cn/ues/manage)，在目标UES集群的插件管理页面进行US3插件的安装，具体操作方法可以参考文档[插件管理](/ues/plugins/manage)章节。
 
 ![](/images/operate/backup/install_ufile_plugin.png)
 
@@ -44,11 +44,11 @@ UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot A
 
 | 参数 | 说明 |
 | ----- | ----- |
-| UFile存储空间 | 用于存放UES集群的快照。<font color=red>注意：建立仓库之后不可以删除该仓库绑定的UFile存储空间，否则已经生成的快照文件将会丢失，新的快照也将无法生成。</font> |
-| UFile令牌 | 用于授权访问上述存储空间，必须具有该存储空间的上传、下载、删除、文件列表权限，缺一不可。<font color=red>注意：建立仓库之后不可以删除该仓库绑定的UFile令牌，也不可以取消任何一项必备权限，同时还必须确保该UFile令牌未过有效期，否则快照生成、快照恢复等操作将会失败。</font> |
+| US3存储空间 | 用于存放UES集群的快照。<font color=red>注意：建立仓库之后不可以删除该仓库绑定的US3存储空间，否则已经生成的快照文件将会丢失，新的快照也将无法生成。</font> |
+| US3令牌 | 用于授权访问上述存储空间，必须具有该存储空间的上传、下载、删除、文件列表权限，缺一不可。<font color=red>注意：建立仓库之后不可以删除该仓库绑定的US3令牌，也不可以取消任何一项必备权限，同时还必须确保该US3令牌未过有效期，否则快照生成、快照恢复等操作将会失败。</font> |
 | 仓库名称 | 用于标识一个仓库，在一个UES集群内部不允许出现多个同名仓库。 |
-| 基础路径 | 快照文件在存储空间中的路径，默认为ues\_backup，生成的快照文件会存放在UFile存储空间中的该目录下。 |
-| 只读 | 控制UES集群对于该仓库的读写权限。<font color=red>注意：在多个UES集群中注册指向同一个路径（UFile存储空间 + 基础路径）的仓库时，只应该设置一个集群对其具有写入权限，其他集群应该设置为只读权限，以确保快照文件的完整性和一致性。</font> |
+| 基础路径 | 快照文件在存储空间中的路径，默认为ues\_backup，生成的快照文件会存放在US3存储空间中的该目录下。 |
+| 只读 | 控制UES集群对于该仓库的读写权限。<font color=red>注意：在多个UES集群中注册指向同一个路径（US3存储空间 + 基础路径）的仓库时，只应该设置一个集群对其具有写入权限，其他集群应该设置为只读权限，以确保快照文件的完整性和一致性。</font> |
 | 快照压缩 | 启用压缩后，将对快照中的索引映射和设置文件进行压缩，但数据文件不会被压缩。 |
 | 分块大小 | 用于限制快照过程中单个文件分块的大小。 |
 | 快照生成最大速度 | 用于限制每个节点生成快照的最大速度。 |

@@ -1,22 +1,22 @@
-# UFile插件
+# US3插件
 
-UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备份至UFlie的快照中将数据恢复至Elasticsearch。
+US3插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备份至UFlie的快照中将数据恢复至Elasticsearch。
 
 ## 一、安装插件
 
-可以通过UES控制台的“插件管理”功能进行UFile插件的安装，插件名称为elasticsearch-repository-ufile，具体操作方法请参考文档[插件管理](ues/plugins/manage)章节。
+可以通过UES控制台的“插件管理”功能进行US3插件的安装，插件名称为elasticsearch-repository-ufile，具体操作方法请参考文档[插件管理](ues/plugins/manage)章节。
 
-## 二、创建UFile存储空间
+## 二、创建US3存储空间
 
 ### 1.创建存储空间
 
-在UFile控制台创建用于UES数据备份的存储空间，为了确保网络传输质量，请选择**与目标UES集群相同的地域**进行创建。空间类型请选择**“私有空间”**。
-![](/images/plugins/ufile/01-创建ufile存储空间.png)
+在US3控制台创建用于UES数据备份的存储空间，为了确保网络传输质量，请选择**与目标UES集群相同的地域**进行创建。空间类型请选择**“私有空间”**。
+![](/images/plugins/us3/01-创建us3存储空间.png)
 
 ### 2.创建令牌
 
-在UFile控制台创建用于访问上述存储空间的令牌，请注意选择上述创建的存储进行授权，并在“令牌权限”中勾选“上传”、“下载”、“删除”、“文件列表”等。
-![](/images/plugins/ufile/02-创建ufile令牌.png)
+在US3控制台创建用于访问上述存储空间的令牌，请注意选择上述创建的存储进行授权，并在“令牌权限”中勾选“上传”、“下载”、“删除”、“文件列表”等。
+![](/images/plugins/us3/02-创建us3令牌.png)
 
 ### 3.获取存储空间内网域名及密钥信息
 
@@ -24,16 +24,16 @@ UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备
 
 **（1）存储空间内网域名**
 
-请注意UFile控制台展示的存储空间域名是外网域名，您需要查看UFile文档获取其内网域名，详见UFile文档的[“FAQ” -
+请注意US3控制台展示的存储空间域名是外网域名，您需要查看US3文档获取其内网域名，详见US3文档的[“FAQ” -
 “各机房proxy\_host地址分别是什么？”](/ufile/faq)一节。
 
-以上述创建的示例存储空间为例，其外网域名为：ues-backup.uae-dubai.ufileos.com，查询得到UFile迪拜的内网域名为：www.internal-uae-dubai.ufileos.com，故示例存储空间的内网域名为：**ues-backup.internal-uae-dubai.ufileos.com**
-![](/images/plugins/ufile/03-获取存储空间域名.png)
+以上述创建的示例存储空间为例，其外网域名为：ues-backup.uae-dubai.ufileos.com，查询得到US3迪拜的内网域名为：www.internal-uae-dubai.ufileos.com，故示例存储空间的内网域名为：**ues-backup.internal-uae-dubai.ufileos.com**
+![](/images/plugins/us3/03-获取存储空间域名.png)
 
 **（2）拥有上述存储空间访问权限的令牌密钥**
 
-在UFile控制台“令牌管理”页面查看令牌的公钥和私钥。
-![](/images/plugins/ufile/04-获取令牌密钥.png)
+在US3控制台“令牌管理”页面查看令牌的公钥和私钥。
+![](/images/plugins/us3/04-获取令牌密钥.png)
 
 ## 三、创建仓库
 
@@ -57,13 +57,13 @@ UFile插件支持将Elasticsearch数据的快照备份至UFlie，并可从已备
 
 \<1\>：ES备份仓库的名称
 
-\<2\> endpoint：上述UFile存储空间的内网域名
+\<2\> endpoint：上述US3存储空间的内网域名
 
-\<3\> public\_key：上述UFile令牌的公钥
+\<3\> public\_key：上述US3令牌的公钥
 
-\<4\> private\_key：上述UFile令牌的私钥
+\<4\> private\_key：上述US3令牌的私钥
 
-\<5\> bucket：上述UFile存储空间的名称
+\<5\> bucket：上述US3存储空间的名称
 
 \<6\> compress：是否对备份的索引进行压缩（true / false）
 
