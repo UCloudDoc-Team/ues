@@ -24,7 +24,7 @@ US3插件支持将Elasticsearch数据的快照备份至US3，并可从已备份�
 
 **（1）存储空间内网域名**
 
-请注意US3控制台展示的存储空间域名是外网域名，您需要查看US3文档获取其内网域名，详见US3文档的[“产品简介” - “地域和域名”](/ufile/introduction/region)一节。
+请注意US3控制台展示的存储空间域名是外网域名，您需要查看US3文档获取其内网域名，详见US3文档的[“地域和域名”](/ufile/introduction/region)一节。
 
 以上述创建的示例存储空间为例，其外网域名为：ues-backup.uae-dubai.ufileos.com，查询得到US3迪拜的内网域名为：www.internal-uae-dubai.ufileos.com ，故示例存储空间的内网域名为：**ues-backup.internal-uae-dubai.ufileos.com**
 ![](/images/plugins/us3/03-获取存储空间域名.png)
