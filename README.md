@@ -15,7 +15,7 @@
     * [预置插件](/ues/plugins/default)
     * [插件管理](/ues/plugins/manage)
     * [Security插件](/ues/plugins/security)
-    * [UFile插件](/ues/plugins/ufile)
+    * [US3插件](/ues/plugins/us3)
 * 开发指南
     * [ES测试](/ues/develop/test)
     * [配置管理](/ues/develop/config)
