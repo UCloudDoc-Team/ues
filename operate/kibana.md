@@ -14,3 +14,16 @@ kibana打开了，你可以使用它了。
 ![image](/images/operate/detail_kibana_2.jpg)
 
 [官网Kibana](https://www.elastic.co/guide/en/kibana/5.5/index.html)
+
+## Kibana代理访问
+
+可以通过在控制台开启或关闭Kibana代理访问，设置Kibana在公网访问是否能访问。(默认为开启状态)
+
+**开启Kibana代理访问**
+
+![image](/images/operate/detail_kibana_3.jpg)
+
+
+**关闭Kibana代理访问**
+
+![image](/images/operate/detail_kibana_4.jpg)
