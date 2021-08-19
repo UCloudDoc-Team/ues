@@ -6,6 +6,7 @@
     * [创建集群](/ues/operate/create)
     * [集群信息](/ues/operate/info)
     * [集群操作](/ues/operate/dealservice)
+    * [同义词操作](/ues/operate/synonyms)
     * [Kibana](/ues/operate/kibana)
     * [监控告警](/ues/operate/monitor)
     * 数据备份与恢复
