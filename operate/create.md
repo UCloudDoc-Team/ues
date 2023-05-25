@@ -13,8 +13,10 @@
 
 ## 集群类型选择
 
-**基础类型** ![images](/create_cluster_base_1.jpg) 
-**主节点分离类型** ![image](/images/create_cluster_master_1.jpg)
+**基础类型** ![images](/images/create_cluster_base_1.jpg) 
+
+
+**专有主节点** ![image](/images/create_cluster_master_1.jpg)
 
 初始创建可以选择集群类型：
 
@@ -24,7 +26,7 @@
 
 \`node.data: true\`
 
-\* 主节点分离类型为集群设置有单独master节点的情况
+\* 专有主节点类型为集群设置有单独master节点的情况
 
 master节点配置为：
 
@@ -42,11 +44,11 @@ data节点配置为：
 
 值得注意的是，基础类型暂不支持添加主节点。
 
-## 节点机型、节点数量选择以及付费方式
+## 节点规格、节点数量选择以及付费方式
 
 ![image](/images/create_node_type_1.jpg)
 
-**其中可选的节点机型为双选框控制**
+**其中可选的节点规格**
 
 按磁盘、规格分类：
 
@@ -55,7 +57,7 @@ data节点配置为：
 | RSSD云盘  | o.es |
 | SSD云盘  | n.es |
 
-可选节点机型详细配置（最新节点参考“UES价格”导航页）：
+可选节点规格详细配置（最新节点参考“UES价格”导航页）：
 
 | 机型    | 名称           | 配置                 |
 | ----- | ------------ | ------------------ |
@@ -102,7 +104,7 @@ Elasticsearch 服务存储容量的主要因素如下：
 
 ## 设置Kibana账号密码
 
-![image](/images/create_kibana_1.jpg)
+![image](/images/create_kibana_passwd_1.jpg)
 
 Kibana是一个开源的分析与可视化平台，是Elasticsearch比较常用的管理工具。您可以用kibana搜索、查看、交互集群中的索引数据，使用各种不同的图表、表格、地图等kibana能够很轻易地展示高级数据分析与可视化。
 
@@ -116,7 +118,7 @@ Kibana让我们理解大量数据变得很容易。
 
 ## 集群部署
 
-![image](/images/create_ues_5.jpg)
+![image](/images/create_ues_list_1.jpg)
 
 等待部署中，由于集群规模不同，所需要的部署时间会有所差异，部署大致时间在2分钟到5分钟。
 
