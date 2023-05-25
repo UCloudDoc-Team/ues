@@ -101,9 +101,9 @@
 
 详情页节点列表包含 **节点日志** 操作
 
-![image](/images/operate/detail_logs_1.jpg)
+![image](/images/operate/detail_logs_list_1.jpg)
 
-初次打开默认为当前小时，并且提供选择时间段来查询节点的输出日志。
+点击查看操作，查看对应日志。
 
 ## kibana密码重置
 
