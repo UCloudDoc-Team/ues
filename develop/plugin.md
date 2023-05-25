@@ -131,10 +131,10 @@ Plugin\](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules
 </properties>
 ```
 
-IK分词支持本地自定义词库，并且支持远程热更新词库，UES通过 \*\* 词库信息保存在特定索引中 \*\* 来完成自定义词库的更新。下面给出在
-\*\* Kibana \*\* 中的具体操作流程，其中 \*\* API 要保持完全一致 \*\*。
+IK分词支持本地自定义词库，并且支持远程热更新词库，UES通过 **词库信息保存在特定索引中** 来完成自定义词库的更新。下面给出在
+**Kibana** 中的具体操作流程，其中 **API 要保持完全一致**。
 
-\* \*\* 本地扩展字典 \*\*
+\* **本地扩展字典**
 
 ```
 PUT /custom_ik/analyzer/1
@@ -157,7 +157,7 @@ PUT /custom_ik/analyzer/1
 }
 ```
 
-\* \*\* 本地扩展停止词字典 \*\*
+\* **本地扩展停止词字典**
 
 ```
 PUT /custom_ik/analyzer/2
@@ -180,7 +180,7 @@ PUT /custom_ik/analyzer/2
 }
 ```
 
-\* \*\* 远程扩展字典 \*\*
+\* **远程扩展字典**
 
 ```
 PUT /custom_ik/analyzer/3
@@ -198,7 +198,7 @@ PUT /custom_ik/analyzer/3
 }
 ```
 
-\* \*\* 远程扩展停止词字典 \*\*
+\* **远程扩展停止词字典**
 
 ```
 PUT /custom_ik/analyzer/4
@@ -225,4 +225,4 @@ GET /custom_ik/analyzer/3
 GET /custom_ik/analyzer/4
 ```
 
-\* \*\* 最后还需一步 \*\*，到控制台点击需要更新的分词词库项完成配置文件的更新，并重启集群节点使之生效。
+\* **最后还需一步**，到控制台点击需要更新的分词词库项完成配置文件的更新，并重启集群节点使之生效。
