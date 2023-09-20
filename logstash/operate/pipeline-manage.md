@@ -5,15 +5,15 @@ Logstash 通过管道来实现数据的采集处理，它包含必选的 input �
 1. 登录 [Elasticsearch Service 控制台](https://console.ucloud.cn/ues/ulogstash)，进入 Logstash 实例列表页。
 
 2. 在实例列表页，单击实例名称进入实例详情页，然后进入管道管理页签，单击创建管道。
-![创建管道1](/logstash/images/create_ulogstash_pipeline_1.png)
+![创建管道1](/images/logstash/create_ulogstash_pipeline_1.png)
 
 3. 填写管道名称（支持字母、数字、_）
-![创建管道2](/logstash/images/create_ulogstash_pipeline_2.png)
+![创建管道2](/images/logstash/create_ulogstash_pipeline_2.png)
 
 4.  Config配置
 
     用户根据任务内容进行修改。
-    ![创建管道3](/logstash/images/create_ulogstash_pipeline_3.png)
+    ![创建管道3](/images/logstash/create_ulogstash_pipeline_3.png)
     **参数说明**
     | 参数   | 说明                                     |
     | ------ | ---------------------------------------- |
