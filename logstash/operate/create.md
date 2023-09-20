@@ -4,9 +4,9 @@
 
 ## 创建
 
-![image](/logstash/images/create_ulogstash_base_1.jpg)
-![image](/logstash/images/create_ulogstash_type_1.jpg)
-![image](/logstash/images/create_ulogstash_setting_1.jpg)
+![image](/images/logstash/create_ulogstash_base_1.jpg)
+![image](/images/logstash/create_ulogstash_type_1.jpg)
+![image](/images/logstash/create_ulogstash_setting_1.jpg)
 
 页面会列出可创建服务的全部地域和可用区，选择需求的可用区、服务版本、磁盘类型、节点类型、磁盘大小、节点数量、填写一些初始化信息等内容后创建就可实现服务实例的快速部署。
 
@@ -44,7 +44,7 @@
 
 ## 实例部署
 
-![image](/logstash/images/create_ulogstash_list_1.jpg)
+![image](/images/logstash/create_ulogstash_list_1.jpg)
 
 等待部署中，由于实例规模不同，所需要的部署时间会有所差异，部署大致时间在2分钟到5分钟。
 

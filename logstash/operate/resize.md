@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 **Elasticsearch服务 UES 控制台**。
+1. 登录 [Elasticsearch Service 控制台](https://console.ucloud.cn/ues/ulogstash)。
 
 2. 在顶部菜单栏处，选择地域。
 
