@@ -34,7 +34,7 @@
             * [释放实例](/ues/logstash/operate/release)
         * [实例变更](/ues/logstash/operate/resize)
         * [管道管理](/ues/logstash/operate/pipeline-manager)
-        * [YML文件配置]()
+        * [YML文件配置](/ues/logstash/operate/ymlconfig)
 * [版本管理](/ues/version)
 * [FAQs](/ues/faqs)
 * [Rally压测](/ues/rally)
