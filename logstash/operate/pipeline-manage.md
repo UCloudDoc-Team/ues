@@ -20,6 +20,7 @@ Logstash 通过管道来实现数据的采集处理，它包含必选的 input �
     | input  | 输入数据源配置。Logstash 支持的输入数据源类型，可参考 [Input plugins](https://www.elastic.co/guide/en/logstash/7.10/input-plugins.html) |
     | filter | 对数据进行过滤或者预处理的配置。Logstash 支持的 filter 插件类型，可参考 [Filter plugins](https://www.elastic.co/guide/en/logstash/7.10/filter-plugins.html) |
     | output | 输出数据源配置。Logstash 支持的输出数据源类型，可参考 [Output plugins](https://www.elastic.co/guide/en/logstash/7.10/output-plugins.html) |
+    
     管道任务配置详情可参考 [配置文件结构](https://www.elastic.co/guide/en/logstash/7.10/configuration-file-structure.html)。
 
 5. 管道参数配置
