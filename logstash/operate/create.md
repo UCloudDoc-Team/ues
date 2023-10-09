@@ -1,6 +1,6 @@
 # 创建Logstash实例
 
-控制台上 **全部产品** 寻找 **大数据与中间件** 大类下 **[Elasticsearch Service 控制台](https://console.ucloud.cn/ues/ulogstash)** 进入产品页
+可点击 **[ULogstash 控制台](https://console.ucloud.cn/ues/ulogstash)** 进入产品页
 
 ## 创建
 ![image](/images/logstash/create_ulogstash_base_1.jpg)

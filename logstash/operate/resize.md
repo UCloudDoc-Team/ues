@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [Elasticsearch Service 控制台](https://console.ucloud.cn/ues/ulogstash)。
+1. 登录 [ULogstash 控制台](https://console.ucloud.cn/ues/ulogstash)。
 
 2. 在顶部菜单栏处，选择地域。
 
@@ -20,8 +20,14 @@
 
 （1）增加节点，新增相同配置的节点。
 
+ ![image](/images/logstash/resize_ulogstash_node_1.jpg)
+
 （2）调整规格，修改当前节点配置、节点重启生效。
 
+ ![image](/images/logstash/resize_ulogstash_type_1.jpg)
+
 （3）修改磁盘大小，磁盘只允许扩大。
+
+ ![image](/images/logstash/resize_ulogstash_disk_1.jpg)
 
 6. 选中对应修改配置，单击立即购买。购买后，集群会完成相应的配置更改。

@@ -8,7 +8,7 @@
 
 ## 操作步骤
 
-1. 登录 [Elasticsearch Service 控制台](https://console.ucloud.cn/ues/ulogstash)，进入ULogstash 实例列表页。
+1. 登录 [ULogstash 控制台](https://console.ucloud.cn/ues/ulogstash)，进入ULogstash 实例列表页。
 
 ![image](/images/logstash/ulogstash_release_clusterlist_1.jpg)
 
