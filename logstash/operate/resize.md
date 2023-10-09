@@ -20,14 +20,14 @@
 
 （1）增加节点，新增相同配置的节点。
 
- ![image](/images/logstash/resize_ulogstash_node_1.jpg)
+ ![image](/images/logstash/resize_ulogstash_node_1.png)
 
 （2）调整规格，修改当前节点配置、节点重启生效。
 
- ![image](/images/logstash/resize_ulogstash_type_1.jpg)
+ ![image](/images/logstash/resize_ulogstash_type_1.png)
 
 （3）修改磁盘大小，磁盘只允许扩大。
 
- ![image](/images/logstash/resize_ulogstash_disk_1.jpg)
+ ![image](/images/logstash/resize_ulogstash_disk_1.png)
 
 6. 选中对应修改配置，单击立即购买。购买后，集群会完成相应的配置更改。
