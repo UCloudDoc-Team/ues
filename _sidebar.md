@@ -26,6 +26,7 @@
             * [Logstash部署](/ues/develop/logstash)
             * [功能文档](/ues/develop/guide)
     * Logstash
+        * [产品简介](/ues/logstash/introduction)
         * 实例管理
             * [创建实例](/ues/logstash/operate/create)
             * [实例信息](/ues/logstash/operate/info)

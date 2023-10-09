@@ -2,7 +2,7 @@
 Logstash 通过管道来实现数据的采集处理，它包含必选的 input 和 output 插件，以及可选的 filter 插件，并支持多管道并行运行，。本文介绍如何通过配置文件管理管道，包括创建管道、修改管道和删除管道。
 
 ## 创建管道
-1. 登录 [Elasticsearch Service 控制台](https://console.ucloud.cn/ues/ulogstash)，进入 Logstash 实例列表页。
+1. 登录 [ULogstash 控制台](https://console.ucloud.cn/ues/ulogstash)，进入 Logstash 实例列表页。
 
 2. 在实例列表页，单击实例名称进入实例详情页，然后进入管道管理页签，单击创建管道。
 ![创建管道1](/images/logstash/create_ulogstash_pipeline_1.png)
