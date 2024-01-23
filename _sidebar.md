@@ -16,6 +16,10 @@
             * [插件管理](/ues/plugins/manage)
             * [Security插件](/ues/plugins/security)
             * [US3插件](/ues/plugins/us3)
+        * 安全用户管理
+            * [创建安全用户集群](/ues/security/create)
+            * [用户管理](/ues/security/manager)
+            * [安全访问](/ues/security/access)
         * 开发指南
             * [ES测试](/ues/develop/test)
             * [配置管理](/ues/develop/config)
