@@ -27,6 +27,10 @@
             * [故障恢复](/ues/develop/recover)
             * [Logstash部署](/ues/develop/logstash)
             * [功能文档](/ues/develop/guide)
+        * 安全用户管理
+            * [创建安全用户集群](/ues/security/create)
+            * [用户管理](/ues/security/manager)
+            * [安全访问](/ues/security/access)
     * Logstash
         * [产品简介](/ues/logstash/introduction)
         * 实例管理
