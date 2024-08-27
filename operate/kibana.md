@@ -27,3 +27,20 @@ kibana打开了，你可以使用它了。
 **关闭Kibana代理访问**
 
 ![image](/images/operate/detail_kibana_4.jpg)
+
+## Kibana公网访问
+
+**应用型负载均衡ALB**
+
+通过ALB设置防火墙白名单策略，保证公网访问Kibana安全性。
+
+**新建集群**
+
+2024年8月1日之后，创建UES集群时，Kibana节点独立部署，不再提供公网Kibana代理访问功能。
+
+若客户有公网访问Kibana需求，则可以通过创建应用型负载均衡ALB, 绑定Kibana节点的IP地址、端口为5601，实现Kibana公网访问。
+
+**原有集群**
+
+原有集群Kibana服务部署在数据节点上，由于公网访问安全的问题，建议客户关闭Kibana代理访问，通过创建应用型负载均衡ALB, 绑定第一个数据节点的IP地址、端口为5601，实现Kibana公网访问。
+
