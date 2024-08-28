@@ -5,7 +5,8 @@
 ## 创建
 
 ![image](/images/create_ues_base_1.jpg)
-![image](/images/create_ues_type_1.jpg)
+![image](/images/create_ues_type_1.png)
+![image](/images/create_ues_type_2.png)
 ![image](/images/create_ues_setting_1.jpg)
 
 
@@ -13,10 +14,13 @@
 
 ## 集群类型选择
 
-**基础类型** ![images](/images/create_cluster_base_1.jpg) 
+**基础类型** ![images](/images/create_cluster_base_1.png) 
 
 
-**专有主节点** ![image](/images/create_cluster_master_1.jpg)
+**专有主节点** ![image](/images/create_cluster_master_1.png)
+
+
+**协调节点** ![image](/images/create_cluster_coordinating_1.png)
 
 初始创建可以选择集群类型：
 
@@ -39,6 +43,14 @@ data节点配置为：
 \`node.master: false\`
 
 \`node.data: true\`
+
+\* 协调节点类型为集群设置有单独协调节点的情况
+
+协调节点配置为：
+
+\`node.master: false\`
+
+\`node.data: false\`
 
 如果您的集群是需求较多的节点数和较高的节点配置，推荐考虑选用主节点分离类型。这样即保证主节点选用较低的配置来避免资源浪费，又保证数据节点选用较高配置来提高数据处理能力。其中主节点分离类型主节点个数为3个，节点个数5-20个时选用的主节点配置为2核8G，节点个数大于20个时选用的主节点配置为4核8G。
 
