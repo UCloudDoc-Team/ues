@@ -4,7 +4,7 @@
 
 ## 创建
 
-![image](/images/create_ues_base_1.png)
+![image](/images/create_ues_base_1.jpg)
 ![image](/images/create_ues_type_1.png)
 ![image](/images/create_ues_type_2.png)
 ![image](/images/create_ues_setting_1.jpg)
