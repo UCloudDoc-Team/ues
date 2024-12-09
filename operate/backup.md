@@ -114,31 +114,6 @@ UES的数据备份功能，使用Elasticsearch（以下简称ES）的 snapshot A
 
 例如：index\_\*,-index\_1 表示所有以 index\_ 开头，但不包含 index\_1 在内的索引。
 
-（4）基于日期数学表达式的索引名称
-
-    <static_name{date_math_expr{date_format|time_zone}}>
-
-上述表达式中，各个字段的含义如下：
-
-static\_name：索引名称中的静态部分
-
-date\_math\_expr：动态的日期表达式
-
-date_format：日期格式（可选），默认是YYYY.MM.dd
-
-time_zone：时区（可选），默认是UTC
-
-样例（**表达式两端的尖括号 \<\> 必不可少**）：
-
-假设当前时间是2020年2月20日中午12点（UTC）。
-
-| 表达式 | 表达式的值 |
-| ----- | ----- |
-| <index\_{now/d}> | index\_2020.02.20 |
-| <index\_{now-1d}> | index\_2020.02.19 |
-| <index\_{now/M}> | index\_2020.02.01 |
-| <index\_{now/M{YYYY.MM}}> | index\_2020.02 |
-
 ## 参考信息
 
 关于创建快照、从快照恢复数据、查询快照信息等操作的更多信息，请参考Elasticsearch官方文档：
