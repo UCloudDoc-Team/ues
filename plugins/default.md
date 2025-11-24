@@ -2,7 +2,7 @@
 
 UES 提供了插件机制，当前我们的 UES 服务内置了以下常用插件，暂不支持用户自己上传安装插件。
 
-\_\[参考链接\](https://www.elastic.co/guide/en/elasticsearch/plugins/current/index.html)\_
+_[参考链接](https://www.elastic.co/guide/en/elasticsearch/plugins/current/index.html)_
 
 ## Analysis Plugins
 
@@ -122,7 +122,7 @@ SELECT * FROM locations WHERE GEO_BOUNDING_BOX(fieldname,100.0,1.0,101,0.0)
 SELECT * FROM indexName/type
 ```
 
-**\_该插件使用来自开源项目\_**，\_\[参考链接\](https://github.com/NLPchina/elasticsearch-sql)\_
+**该插件使用来自开源项目**，_[参考链接](https://github.com/NLPchina/elasticsearch-sql)_
 
 ## Snapshot/Restore Repository Plugins
 

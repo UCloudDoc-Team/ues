@@ -60,8 +60,8 @@ http://<host>:9200/_cluster/reroute \
 
 在放弃和离开分片之前，集群将尝试在一行中分配一个最大的index.allocation.max\\\_retries时间片（默认为5）。
 这种情况可能是由结构性问题引起的，例如有一个分析器引用了所有节点上不存在的停用词文件。一旦问题得到解决，可以通过retry\\\_failed调用
-\_\[Reroute
-API\](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-reroute.html)\_
+_[Reroute
+API](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-reroute.html)_
 来手动重试分配，这将试图对这些分片进行一次重试。
 
 ```
@@ -69,12 +69,12 @@ POST /_cluster/reroute?retry_failed=true
 ```
 
 集群更糟糕的情况可能出现未分配的主分片，需手动分配请参考
-\_**\[Reroute\](<https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-reroute.html>)**\_
+_**[Reroute](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-reroute.html)**_
 
 \* **节点磁盘使用率超出阀值**
 
-节点磁盘使用率对分片分配的影响，参考 \_**\[Disk-based Shard
-Allocation\](<https://www.elastic.co/guide/en/elasticsearch/reference/6.2/disk-allocator.html>)**\_
+节点磁盘使用率对分片分配的影响，参考 _**[Disk-based Shard
+Allocation](<https://www.elastic.co/guide/en/elasticsearch/reference/6.2/disk-allocator.html>)**_
 
 如果是磁盘使用率高导致集群出现未分配分片，可以选择修改磁盘使用策略暂时缓解 或 扩容节点个数。
 

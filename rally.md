@@ -1,7 +1,7 @@
 # Rally压测
 
 我们利用 Elasticsearch 官方提供的 benchmark 压测工具
-\[rally\](<https://github.com/elastic/rally>)
+[rally](https://github.com/elastic/rally)
 对华北一可用区B的Elasticsearch集群（V5.5.1）进行测试，测试结果如下：
 
 **8核16G 3个节点**
