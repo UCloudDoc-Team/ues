@@ -37,16 +37,16 @@ POST _reindex
 
 使用时需要在elasticsearch.yml中配置 reindex.remote.whitelist
 属性。可以设置多组（例如，otherhost:9200, another:9200,
-127.0.10.\\\*:9200, localhost:\\\*）。
+127.0.10.\*:9200, localhost:\*）。
 
-具体使用可参考 \_**\[Reindex from
-Remoteedit\](<https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#reindex-from-remote>)**\_
+具体使用可参考 _**[Reindex from
+Remoteedit](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#reindex-from-remote)**_
 
 ### 2\. Elasticsearch-Dump
 
 Elasticsearch-Dump是一个elasticsearch数据导入导出开源工具包。安装、迁移相关执行可以在相同可用区的云主机上进行，使用方便。
 
-\* \*\* Installing \*\*
+* **Installing**
 
 需要node环境，npm安装elasticdump
 
@@ -55,7 +55,7 @@ npm install elasticdump -g
 elasticdump
 ```
 
-\* \*\* Use \*\*
+* **Use**
 
 ```
 # Copy an index from production to staging with analyzer and mapping:
@@ -79,18 +79,18 @@ elasticdump \
   --params='{"preference" : "_shards:0"}'
 ```
 
-elasticdump命令其他参数使用参考 \_**\[Elasticdump
-Options\](<https://github.com/taskrabbit/elasticsearch-dump#options>)**\_
+elasticdump命令其他参数使用参考 _**[Elasticdump
+Options](https://github.com/taskrabbit/elasticsearch-dump#options)**_
 
 ### 3\. Elasticsearch-Migration
 
 Elasticsearch-Migration是基于Go语言开源的工具包。和Elasticsearch-Dump一样，相关操作可以在相同可用区的云主机上进行。
 
-\* \*\* Download \*\*
+* **Download**
 
-\_**\[下载地址\](<https://github.com/medcl/esm/releases>)**\_
+_**[下载地址](<https://github.com/medcl/esm/releases>)**_
 
-\* \*\* Use \*\*
+* **Use**
 
 ```
 ./bin/esm -s http://192.168.1.x:9200/ -d http://192.168.1.y:9200/ -x src_index -y dest_index -w=5 -b=100
@@ -121,5 +121,4 @@ Elasticsearch-Migration是基于Go语言开源的工具包。和Elasticsearch-Du
   --refresh          refresh after migration finished
 ```
 
-Elasticsearch-Migration注意事项
-\_**\[参考链接\](<https://github.com/medcl/esm>)**\_
+Elasticsearch-Migration注意事项 **[参考链接](https://github.com/medcl/esm)**

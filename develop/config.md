@@ -48,8 +48,8 @@
   - **注：** N为节点个数
 
 上面没有列出的配置项大多都可以通过
-\*\*\_\[cluster-update-settings\](https:*www.elastic.co/guide/en/elasticsearch/reference/current/cluster-update-settings.html)\_\*\*
-动态修改。动态配置项详细描述请参考\_\[Modules\](https:*www.elastic.co/guide/en/elasticsearch/reference/current/modules.html)\_
+**_[cluster-update-settings](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-update-settings.html)_**
+动态修改。动态配置项详细描述请参考_[Modules](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules.html)_
 
 下面列出常见的可 **动态更新** 的配置参数。
 

@@ -5,7 +5,7 @@
 Logstash5.5需要Java 8，不支持Java 9。 使用官方的Oracle发行版或OpenJDK等开源发行版。
 
 安装参考
-\_**\[Installing-Logstash\](<https://www.elastic.co/guide/en/logstash/current/installing-logstash.html>)**\_
+**_[Installing-Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)_**
 
 ## 配置文件编写
 
@@ -28,4 +28,4 @@ bin/logstash -f logstash-simple.conf
 ```
 
 更多配置示例参考
-\_**\[Logstash-Config-Examples\](<https://www.elastic.co/guide/en/logstash/current/config-examples.html>)**\_
+**_[Logstash-Config-Examples](https://www.elastic.co/guide/en/logstash/current/config-examples.html)_**
