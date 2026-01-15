@@ -1,18 +1,19 @@
 # 创建集群
+本节旨在引导新用户快速上手创建实例。
 
-控制台上 **产品与服务** 寻找 **大数据** 大类下 **ES服务 Elasticsearch** 进入产品页
-
-## 创建
-
-![image](/images/create_ues_base_1.jpg)
-![image](/images/create_ues_type_1.png)
-![image](/images/create_ues_type_2.png)
-![image](/images/create_ues_setting_1.jpg)
-
+登录控制台，在 **产品与服务** 寻找 **大数据** 大类下 **ES服务 Elasticsearch** 进入[产品创建页](https://console.ucloud.cn/ues/create)。
 
 页面会列出可创建服务的全部地域和可用区，选择需求的可用区、服务版本、磁盘类型、节点类型、磁盘大小、节点数量、填写一些初始化信息等内容后创建就可实现服务集群的快速部署。
 
-## 集群类型选择
+## 地域及基础配置
+创建 UES 集群时需先选择部署地域及可用区。UES 支持单可用区、双可用区及三可用区部署模式，建议根据业务对可用性与容灾能力的要求选择合适的可用区部署方式。详情可参考[多可用区部署](/ues/operate/cross_zone.md)
+
+![image](/images/create_es_0115.png)
+
+
+## 节点配置
+
+### 集群类型选择
 
 **基础类型** ![images](/images/create_cluster_base_1.png) 
 
@@ -56,7 +57,7 @@ data节点配置为：
 
 值得注意的是，基础类型暂不支持添加主节点。
 
-## 节点规格、节点数量选择以及付费方式
+### 节点规格、节点数量选择以及付费方式
 
 ![image](/images/create_node_type_1.jpg)
 
@@ -114,7 +115,7 @@ Elasticsearch 服务存储容量的主要因素如下：
 
 计费模式分为按时、月付、年付3种类型。控制台支持计费类型修改。
 
-## 设置Kibana账号密码
+## Kibana账号密码设置
 
 ![image](/images/create_kibana_passwd_1.jpg)
 
@@ -124,11 +125,10 @@ Kibana让我们理解大量数据变得很容易。
 
 产品默认开启kibana服务，并添加了权限验证。需要在创建集群的时候设置账号密码。
 
-## 确认支付
+## 后续操作
 
-集群信息选择和填写完成后点击创建，到支付确认页面，完成支付创建。
-
-## 集群部署
+1. 确认支付：集群信息选择和填写完成后点击创建，到支付确认页面，完成支付创建。
+2. 集群部署
 
 ![image](/images/create_ues_list_1.jpg)
 
