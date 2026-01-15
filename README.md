@@ -10,6 +10,7 @@
         * [同义词操作](/ues/operate/synonyms)
         * [Kibana](/ues/operate/kibana)
         * [监控告警](/ues/operate/monitor)
+        * [多可用区部署](/ues/operate/cross_zone)
         * 数据备份与恢复
             * [数据备份](/ues/operate/backup)
             * [数据恢复](/ues/operate/restore)
