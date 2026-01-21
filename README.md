@@ -11,6 +11,7 @@
         * [Kibana](/ues/operate/kibana)
         * [监控告警](/ues/operate/monitor)
         * [多可用区部署](/ues/operate/cross_zone)
+        * [安全组](/ues/operate/secgroup)
         * 索引管理
             * [索引管理](/ues/operate/index_manage)
             * [索引模板](/ues/operate/index_template)

@@ -52,7 +52,7 @@
 }
 ```
 
-等价于在Kibana Dev Tools
+等价于在Kibana Dev Tools 执行以下语句：
 
 ```
 PUT ${index_name}/_mappings
