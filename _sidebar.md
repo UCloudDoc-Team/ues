@@ -10,6 +10,9 @@
         * [Kibana](/ues/operate/kibana)
         * [监控告警](/ues/operate/monitor)
         * [多可用区部署](/ues/operate/cross_zone)
+        * 索引管理
+            * [索引管理](/ues/operate/index_manage) 
+            * [索引模板](/ues/operate/index_template)
         * 数据备份与恢复
             * [数据备份](/ues/operate/backup)
             * [数据恢复](/ues/operate/restore)
