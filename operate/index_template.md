@@ -4,7 +4,7 @@
 
 ## 创建索引模板
 
-![image](/images/operate/index_template_1.png)
+![image](/images/index_template_1.png)
 
 1. 在索引管理页面，选择索引模板页签，然后单击创建索引模板。
 2. 在创建索引模板面板中，配置以下参数，然后单击确定。
@@ -62,7 +62,7 @@
 
 ## 编辑索引模板
 
-![image](/images/operate/index_template_2.png)
+![image](/images/index_template_2.png)
 
 1. 在索引管理页面，选择索引模板页签，然后在目标索引模板的操作列下，单击编辑。
 2. 在编辑索引模板面板中，根据需要修改各参数，然后单击确定。
