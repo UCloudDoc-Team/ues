@@ -115,6 +115,13 @@ Elasticsearch 服务存储容量的主要因素如下：
 
 计费模式分为按时、月付、年付3种类型。控制台支持计费类型修改。
 
+## 安全组
+
+![image](/images/create_secgroup_1.png)
+
+初始创建可以选择 1 到 5 个安全组；也可以不绑定安全组，使用默认防护墙。
+
+
 ## Kibana账号密码设置
 
 ![image](/images/create_kibana_passwd_1.jpg)
