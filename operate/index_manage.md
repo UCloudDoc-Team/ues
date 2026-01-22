@@ -6,29 +6,29 @@
 
 进入集群索引页面，可以获取当前集群索引信息列表。
 
-![image](/images/operate/index_manage_1.png)
+![image](/images/index_manage_1.png)
 
 ## 缓存清理
 
 ### 清理全部缓存
 
-![image](/images/operate/index_manage_2.png)
+![image](/images/index_manage_2.png)
 
 清理全部缓存, 相当于执行在Kibana 中执行 **POST _cache/clear** 命令。
 
 ### 清理缓存
 
-![image](/images/operate/index_manage_3.png)
+![image](/images/index_manage_3.png)
 
 清理索引缓存操作，相当于执行在Kibana Dev Tools 中执行 **POST ${index_name}/_cache/clear** 命令； 即清理选中索引缓存。
 
 ## 索引配置
 
-![image](/images/operate/index_manage_4.png)
+![image](/images/index_manage_4.png)
 
 查看选中索引的配置。
 
-![image](/images/operate/index_manage_5.png)
+![image](/images/index_manage_5.png)
 
 编辑索引配置中的 "mappings","settings"，其内容于在Kibana Dev Tools 修改索引配置中 "_mappings","_settings" 一致。
 
@@ -76,7 +76,7 @@ PUT ${index_name}/_settings
 
 ## 分片分布
 
-![image](/images/operate/index_manage_6.png)
+![image](/images/index_manage_6.png)
 
 查看索引分片在节点的分布情况。
 
