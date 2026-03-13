@@ -44,7 +44,7 @@ UES 安全用户创建、修改、删除等相关功能。
 
 ![image](/images/security/manager_create_user_1.png)
 
-集群权限和索引权限可以分别设置；索引权限需设置 **Index Pattern** 配合操作组使用。
+集群权限和索引权限可以分别设置；索引权限需设置 **Index Pattern** 配合操作组使用，并可添加多条。
 
 ## 三：修改用户
 
