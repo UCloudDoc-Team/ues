@@ -1,0 +1,121 @@
+# OpenSearch 测试
+
+OpenSearch集群创建成功后（创建参考操作指南），可以进行集群可用性的初步测试。这里示例通过一台可以访问 opensearch 的 uhost 进行 curl 调用命令测试。
+
+## 集群状态测试
+
+```
+curl -k -s -uadmin:xxxx -X GET 'https://<host>:9200/_cluster/health?pretty'
+```
+
+正常情况，系统返回结果：
+
+``` curl
+{
+  "cluster_name" : "opensearch-xxx",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 3,
+  "number_of_data_nodes" : 3,
+  "discovered_master" : true,
+  "discovered_cluster_manager" : true,
+  "active_primary_shards" : 76,
+  "active_shards" : 113,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```
+
+说明集群是正常的运行状态了，之后进行测试数据写入。
+
+## 索引一个文档
+
+例，索引为 "ucloud"，选择"1"作为ID的编号。这时，请求就是这样的：
+
+```
+curl -k -s -uadmin:xxxx -X PUT \
+https://<host>:9200/ucloud/_doc/1 \
+-H 'Content-Type: application/json' \
+-d '{
+    "name": "UCloud",
+    "age": 5,
+    "about": "at shanghai",
+    "interests": ["service"]
+}'
+```
+
+创建成功返回
+
+``` curl
+{"_index":"ucloud","_id":"1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}
+```
+
+## 检索文档
+
+```
+curl -k -s -uadmin:xxxx -X GET 'https://<host>:9200/ucloud/_doc/1'
+```
+
+返回
+
+``` curl
+{"_index":"ucloud","_id":"1","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{
+    "name": "UCloud",
+    "age": 5,
+    "about": "at shanghai",
+    "interests": ["service"]
+}}
+```
+
+## 搜索文档
+
+```
+curl -k -u admin:xxxx -X GET 'https://<host>:9200/_search'
+curl -k -u admin:xxxx -X GET 'https://<host>:9200/ucloud/_search'
+curl -k -u admin:xxxx -X POST 'https://<host>:9200/_plugins/_sql?pretty' -H "Content-Type: application/json" -d '{"query": "SELECT * FROM ucloud LIMIT 10"}'
+```
+
+
+## 复杂搜索
+
+复杂搜索需使用POST方法，详情请参考 功能文档 API文档
+
+## 更新文档
+
+```
+curl -k -u admin:xxxx -X PUT \
+https://<host>:9200/ucloud/_doc/1 \
+-H 'Content-Type: application/json' \
+-d '{
+    "name" : "UCloud",
+    "age": 5,
+    "about": "at shanghai",
+    "interests": ["service", "professional"]
+}'
+```
+
+更新成功返回
+
+``` curl
+{"_index":"ucloud","_id":"1","_version":2,"result":"updated","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":1,"_primary_term":1}
+```
+
+## 删除
+
+删除文档
+
+```
+curl -k -u admin:xxxx -X DELETE 'https://<host>:9200/ucloud/_doc/1'
+```
+
+删除索引
+
+```
+curl -k -u admin:xxxx -X DELETE 'https://<host>:9200/ucloud'
+```
