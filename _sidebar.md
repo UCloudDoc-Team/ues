@@ -3,7 +3,7 @@
 * [概览](/ues/README)
 * [产品简介](/ues/introduction)
     * Elasticsearch
-        * [创建集群](/ues/operate/create)
+        * [创建集群](user_guide/elasticsearch/operate/create.md)
         * [集群信息](/ues/operate/info)
         * [集群操作](/ues/operate/dealservice)
         * [同义词操作](/ues/operate/synonyms)
