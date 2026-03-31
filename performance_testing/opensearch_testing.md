@@ -1,4 +1,4 @@
-# OpenSearch 性能能测试
+# OpenSearch 性能测试
 
 使用ESRally工具对数据节点规格为4核16 GiB的UCloud云 OpenSearch 3.3.2 版本的实例进行基准测试。
 

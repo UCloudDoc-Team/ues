@@ -1,4 +1,4 @@
-# UES 性能能测试
+# UES 性能测试
 
 使用ESRally工具对数据节点规格为4核16 GiB的UCloud云 Elasticsearch OSS 7.10.2 版本的实例进行基准测试。
 
