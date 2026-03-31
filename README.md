@@ -56,10 +56,10 @@
         * [实例变更](/ues/logstash/operate/resize)
         * [管道管理](/ues/logstash/operate/pipeline-manage)
         * [YML文件配置](/ues/logstash/operate/ymlconfig)
-* [快速入门]
+* 快速入门
     * [使用Elasticsearch搜索数据](/ues/quick_start_guide/use_elasticsearch.md)
     * [使用Opensearch搜索数据](/ues/quick_start_guide/use_opensearch.md)
-* [性能测试]
+* 性能测试
     * [Elasticsearch测试报告](/ues/performance_testing/elasticsearch_testing.md)
     * [Opensearch测试报告](/ues/performance_testing/opensearch_testing.md)
 * [版本说明](/ues/version)
