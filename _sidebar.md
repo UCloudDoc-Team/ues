@@ -9,7 +9,7 @@
     * Elasticsearch
         * [创建集群](/ues/user_guide/elasticsearch/operate/create.md)
         * [集群信息](/ues/user_guide/elasticsearch/operate/info)
-        * [集群操作](/ues/user_guide/elasticsearch/operate/dealservice)0
+        * [集群操作](/ues/user_guide/elasticsearch/operate/dealservice)
         * [同义词操作](/ues/user_guide/elasticsearch/operate/synonyms)
         * [Kibana](/ues/user_guide/elasticsearch/operate/kibana)
         * [监控告警](/ues/user_guide/elasticsearch/operate/monitor)
