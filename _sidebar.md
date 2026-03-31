@@ -32,7 +32,6 @@
             * [用户管理](/ues/user_guide/elasticsearch/security/manager)
             * [安全访问](/ues/user_guide/elasticsearch/security/access)
         * 开发指南
-            * [ES测试](/ues/user_guide/elasticsearch/develop/test)
             * [配置管理](/ues/user_guide/elasticsearch/develop/config)
             * [插件管理](/ues/user_guide/elasticsearch/develop/plugin)
             * [实例运维](/ues/user_guide/elasticsearch/develop/online)
