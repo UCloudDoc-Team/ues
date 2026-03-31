@@ -37,7 +37,6 @@
             * [实例运维](/ues/user_guide/elasticsearch/develop/online)
             * [实例迁移](/ues/user_guide/elasticsearch/develop/migrate)
             * [故障恢复](/ues/user_guide/elasticsearch/develop/recover)
-            * [Logstash部署](/ues/user_guide/elasticsearch/develop/logstash)
             * [功能文档](/ues/user_guide/elasticsearch/develop/guide)
     * Opensearch
         * [创建集群](/ues/user_guide/opensearch/cluster_create.md)
