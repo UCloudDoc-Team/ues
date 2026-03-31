@@ -1,42 +1,52 @@
 
-# 概览
-
-* [产品简介](/ues/introduction)
-* 操作指南
+* [产品介绍]
+    * [什么是云搜索服务](/ues/introduction/introduction.md)
+    * [应用场景](/ues/introduction/scene.md)
+    * [引擎差异](/ues/introduction/difference.md)
+ * [用户指南]   
     * Elasticsearch
-        * [创建集群](/ues/operate/create)
-        * [集群信息](/ues/operate/info)
-        * [集群操作](/ues/operate/dealservice)
-        * [同义词操作](/ues/operate/synonyms)
-        * [Kibana](/ues/operate/kibana)
-        * [监控告警](/ues/operate/monitor)
-        * [多可用区部署](/ues/operate/cross_zone)
-        * [安全组](/ues/operate/secgroup)
-        * [索引监控](/ues/operate/index_monitor)
+        * [创建集群](/ues/user_guide/elasticsearch/operate/create.md)
+        * [集群信息](/ues/user_guide/elasticsearch/operate/info)
+        * [集群操作](/ues/user_guide/elasticsearch/operate/dealservice)0
+        * [同义词操作](/ues/user_guide/elasticsearch/operate/synonyms)
+        * [Kibana](/ues/user_guide/elasticsearch/operate/kibana)
+        * [监控告警](/ues/user_guide/elasticsearch/operate/monitor)
+        * [多可用区部署](/ues/user_guide/elasticsearch/operate/cross_zone)
+        * [安全组](/ues/user_guide/elasticsearch/operate/secgroup)
+        * [索引监控](/ues/user_guide/elasticsearch/operate/index_monitor)
         * 索引管理
-            * [索引管理](/ues/operate/index_manage)
-            * [索引模板](/ues/operate/index_template)
+            * [索引管理](/ues/user_guide/elasticsearch/operate/index_manage) 
+            * [索引模板](/ues/user_guide/elasticsearch/operate/index_template)
         * 数据备份与恢复
-            * [数据备份](/ues/operate/backup)
-            * [数据恢复](/ues/operate/restore)
+            * [数据备份](/ues/user_guide/elasticsearch/operate/backup)
+            * [数据恢复](/ues/user_guide/elasticsearch/operate/restore)
         * 插件指南
-            * [预置插件](/ues/plugins/default)
-            * [插件管理](/ues/plugins/manage)
-            * [Security插件](/ues/plugins/security)
-            * [US3插件](/ues/plugins/us3)
-        * 开发指南
-            * [ES测试](/ues/develop/test)
-            * [配置管理](/ues/develop/config)
-            * [插件管理](/ues/develop/plugin)
-            * [实例运维](/ues/develop/online)
-            * [实例迁移](/ues/develop/migrate)
-            * [故障恢复](/ues/develop/recover)
-            * [Logstash部署](/ues/develop/logstash)
-            * [功能文档](/ues/develop/guide)
+            * [预置插件](/ues/user_guide/elasticsearch/plugins/default)
+            * [插件管理](/ues/user_guide/elasticsearch/plugins/manage)
+            * [Security插件](/ues/user_guide/elasticsearch/plugins/security)
+            * [US3插件](/ues/user_guide/elasticsearch/plugins/us3)
         * 安全用户管理
-            * [创建安全用户集群](/ues/security/create)
-            * [用户管理](/ues/security/manager)
-            * [安全访问](/ues/security/access)
+            * [创建安全用户集群](/ues/user_guide/elasticsearch/security/create)
+            * [用户管理](/ues/user_guide/elasticsearch/security/manager)
+            * [安全访问](/ues/user_guide/elasticsearch/security/access)
+        * 开发指南
+            * [ES测试](/ues/user_guide/elasticsearch/develop/test)
+            * [配置管理](/ues/user_guide/elasticsearch/develop/config)
+            * [插件管理](/ues/user_guide/elasticsearch/develop/plugin)
+            * [实例运维](/ues/user_guide/elasticsearch/develop/online)
+            * [实例迁移](/ues/user_guide/elasticsearch/develop/migrate)
+            * [故障恢复](/ues/user_guide/elasticsearch/develop/recover)
+            * [Logstash部署](/ues/user_guide/elasticsearch/develop/logstash)
+            * [功能文档](/ues/user_guide/elasticsearch/develop/guide)
+    * Opensearch
+        * [创建集群](/ues/user_guide/opensearch/cluster_create.md)
+        * [集群信息](/ues/user_guide/opensearch/cluster_information.md)
+        * [集群操作](/ues/user_guide/opensearch/cluster_operation.md)
+        * [Dashboard](/ues/user_guide/opensearch/dashboard.md)
+        * 开发指南
+            * [实例运维](/ues/user_guide/opensearch/development_guide/operation&maintenance.md) 
+            * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
+            * [功能文档](/ues/user_guide/opensearch/development_guide/functional_doc.md)
     * Logstash
         * [产品简介](/ues/logstash/introduction)
         * 实例管理
@@ -46,8 +56,12 @@
         * [实例变更](/ues/logstash/operate/resize)
         * [管道管理](/ues/logstash/operate/pipeline-manage)
         * [YML文件配置](/ues/logstash/operate/ymlconfig)
-* [版本管理](/ues/version)
+* [快速入门]
+    * [使用Elasticsearch搜索数据](/ues/quick_start_guide/use_elasticsearch.md)
+    * [使用Opensearch搜索数据](/ues/quick_start_guide/use_opensearch.md)
+* [性能测试]
+    * [Elasticsearch测试报告](/ues/performance_testing/elasticsearch_testing.md)
+    * [Opensearch测试报告](/ues/performance_testing/opensearch_testing.md)
+* [版本说明](/ues/version)
+* [产品计费](/ues/price)
 * [FAQs](/ues/faqs)
-* [Rally压测](/ues/rally)
-* [UES价格](/ues/price)
-        

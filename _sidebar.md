@@ -45,7 +45,6 @@
         * [集群信息](/ues/user_guide/opensearch/cluster_information.md)
         * [集群操作](/ues/user_guide/opensearch/cluster_operation.md)
         * [Dashboard](/ues/user_guide/opensearch/dashboard.md)
-        * [监控告警](/ues/user_guide/opensearch/cluster_monitor.md)
         * 开发指南
             * [实例运维](/ues/user_guide/opensearch/development_guide/operation&maintenance.md) 
             * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
