@@ -5,7 +5,7 @@
     * [什么是云搜索服务](/ues/introduction/introduction.md)
     * [应用场景](/ues/introduction/scene.md)
     * [引擎差异](/ues/introduction/difference.md)
- * [用户指南]   
+* [用户指南]   
     * Elasticsearch
         * [创建集群](/ues/user_guide/elasticsearch/operate/create.md)
         * [集群信息](/ues/user_guide/elasticsearch/operate/info)
