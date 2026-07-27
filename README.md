@@ -4,6 +4,15 @@
     * [应用场景](/ues/introduction/scene.md)
     * [引擎差异](/ues/introduction/difference.md)
 * 用户指南   
+    * Opensearch
+        * [创建集群](/ues/user_guide/opensearch/cluster_create.md)
+        * [集群信息](/ues/user_guide/opensearch/cluster_information.md)
+        * [集群操作](/ues/user_guide/opensearch/cluster_operation.md)
+        * [Dashboard](/ues/user_guide/opensearch/dashboard.md)
+        * 开发指南
+            * [实例运维](/ues/user_guide/opensearch/development_guide/operation&maintenance.md) 
+            * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
+            * [功能文档](/ues/user_guide/opensearch/development_guide/functional_doc.md)
     * Elasticsearch
         * [创建集群](/ues/user_guide/elasticsearch/operate/create.md)
         * [集群信息](/ues/user_guide/elasticsearch/operate/info)
@@ -36,15 +45,6 @@
             * [实例迁移](/ues/user_guide/elasticsearch/develop/migrate)
             * [故障恢复](/ues/user_guide/elasticsearch/develop/recover)
             * [功能文档](/ues/user_guide/elasticsearch/develop/guide)
-    * Opensearch
-        * [创建集群](/ues/user_guide/opensearch/cluster_create.md)
-        * [集群信息](/ues/user_guide/opensearch/cluster_information.md)
-        * [集群操作](/ues/user_guide/opensearch/cluster_operation.md)
-        * [Dashboard](/ues/user_guide/opensearch/dashboard.md)
-        * 开发指南
-            * [实例运维](/ues/user_guide/opensearch/development_guide/operation&maintenance.md) 
-            * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
-            * [功能文档](/ues/user_guide/opensearch/development_guide/functional_doc.md)
     * Logstash
         * [产品简介](/ues/logstash/introduction)
         * 实例管理
