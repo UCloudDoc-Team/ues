@@ -13,6 +13,7 @@
             * [实例运维](/ues/user_guide/opensearch/development_guide/operation&maintenance.md) 
             * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
             * [功能文档](/ues/user_guide/opensearch/development_guide/functional_doc.md)
+        * [公网访问](/ues/user_guide\opensearch\network_access.md)
     * Elasticsearch
         * [创建集群](/ues/user_guide/elasticsearch/operate/create.md)
         * [集群信息](/ues/user_guide/elasticsearch/operate/info)
@@ -45,6 +46,7 @@
             * [实例迁移](/ues/user_guide/elasticsearch/develop/migrate)
             * [故障恢复](/ues/user_guide/elasticsearch/develop/recover)
             * [功能文档](/ues/user_guide/elasticsearch/develop/guide)
+        * [公网访问](/ues/user_guide\elasticsearch\operate\network_access.md)
     * Logstash
         * [产品简介](/ues/logstash/introduction)
         * 实例管理
