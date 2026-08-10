@@ -24,9 +24,11 @@
 ![image](/images/opensearch_new/dashboard02.png)
 ![image](/images/network_access\001.png)
 
+注意：若使用的是ALB，协议可支持“http”或“https”；若使用的是NLB，协议请用“https”。
+
 ### 2.3 访问实例
 
-节点添加完毕后，请在浏览器输入负载均衡的外网IP+9200端口访问实例,注意前缀用“https://”：
+节点添加完毕后，请在浏览器输入负载均衡的外网IP+9200端口访问实例。
 
 ## 3.Opensearch通过公网进行外部访问
 
