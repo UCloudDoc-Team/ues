@@ -24,7 +24,8 @@
 ![image](/images/opensearch_new/dashboard02.png)
 ![image](/images/network_access\004.png)
 
-注意：若使用的是ALB，协议可支持“http”或“https”；若使用的是NLB，协议请用“https”。
+注意：若使用的是ALB，协议可支持“http”或“https”，所选项即为最终访问地址的前缀：
+![image](/images/network_access\005.png)
 
 ### 2.3 访问实例
 
