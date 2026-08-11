@@ -14,6 +14,8 @@
             * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
             * [功能文档](/ues/user_guide/opensearch/development_guide/functional_doc.md)
         * [公网访问](/ues/user_guide\opensearch\network_access.md)
+        * 迁移方案
+            * [Elasticsearch to Opensearch](/ues/user_guide\opensearch\migration_plan.md)
     * Elasticsearch
         * [创建集群](/ues/user_guide/elasticsearch/operate/create.md)
         * [集群信息](/ues/user_guide/elasticsearch/operate/info)
