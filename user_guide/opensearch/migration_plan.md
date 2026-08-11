@@ -47,7 +47,7 @@
 - 内网可访问目标端对象存储与目标 OpenSearch 集群
 - 公网可访问源端对象存储（用于快照跨云拉取）
 - 安装以下工具：
-  - [us3sync](https://docs.ucloud.cn/ufile/tools/us3sync)：快照跨云同步工具
+  - [us3sync](https://docs.ucloud.cn/ufile/tools/us3sync/introduction)：快照跨云同步工具
   - kubectl：K8s 集群操作客户端
 
 ---
@@ -111,7 +111,7 @@ curl "http://<es-host>:9200/_snapshot/migration-repo/<snapshot-name>/_status?pre
 
 ```bash
 # 安装 us3sync
-# 参考 https://docs.ucloud.cn/ufile/solutions/emigration
+# 参考 https://docs.ucloud.cn/ufile/solutions
 
 chmod +x us3sync
 
