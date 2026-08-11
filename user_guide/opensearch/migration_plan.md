@@ -111,7 +111,7 @@ curl "http://<es-host>:9200/_snapshot/migration-repo/<snapshot-name>/_status?pre
 
 ```bash
 # 安装 us3sync
-# 参考 https://docs.ucloud.cn/ufile/tools/us3sync
+# 参考 https://docs.ucloud.cn/ufile/solutions/emigration
 
 chmod +x us3sync
 
@@ -146,7 +146,16 @@ chmod +x us3sync
 | `ALLOW_EXISTING_INDEXES` | 目标侧索引已存在时是否继续（默认 `true`） |
 | `INDEX_ALLOWLIST` | 仅迁移指定索引（逗号分隔）；留空则迁移全部 |
 
-执行迁移后，查看日志确认元数据创建完成：
+执行元数据迁移：
+
+```bash
+cd deploy/metadata/
+cp migration.env.example migration.env
+$EDITOR migration.env   # 填入快照路径、目标集群地址与凭据
+bash run.sh
+```
+
+查看执行日志与结果：
 
 ```bash
 # 查看迁移任务日志
