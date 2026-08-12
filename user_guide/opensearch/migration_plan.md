@@ -269,7 +269,7 @@ kubectl create namespace <namespace>
 | `RFS_WORKERS` | 并行 Worker 数量 |
 | `RFS_WORK_STORAGE` | 每个 Worker 的 PVC 大小（建议 `1000Gi`） |
 | `RFS_S3_REPO_URI` / `RFS_SNAPSHOT_NAME` | 目标端 Bucket 中快照的路径与名称 |
-| `RFS_SESSION_NAME` | 协调索引后缀；重跑时修改以隔离上次状态 |
+| `RFS_SESSION_NAME` | 协调索引后缀，重跑时修改以隔离上次状态 |
 
 ```bash
 bash run.sh   # 创建 ConfigMap、Secret、Job、PVC 并启动 Worker
