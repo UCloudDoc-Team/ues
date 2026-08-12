@@ -249,30 +249,22 @@ curl -k -X DELETE "https://<opensearch-host>:9200/.migrations_working_state*" \
 
 #### 配置参数
 
-#### 配置与部署
-
-```bash
-cd deploy/rfs/
-cp migration.env.example migration.env
-$EDITOR migration.env
-```
-
-> **前提**：确保 K8s namespace 已存在：
-
-```bash
-kubectl create namespace <namespace>
-```
-
 | 变量 | 说明 |
 |---|---|
 | `NAMESPACE` | K8s namespace |
 | `RFS_WORKERS` | 并行 Worker 数量 |
-| `RFS_WORK_STORAGE` | 每个 Worker 的 PVC 大小（建议 `1000Gi`） |
+| `RFS_WORK_STORAGE` | 每个 Worker 的 PVC 大小（建议为最大单分片大小的 2 倍） |
 | `RFS_S3_REPO_URI` / `RFS_SNAPSHOT_NAME` | 目标端 Bucket 中快照的路径与名称 |
-| `RFS_SESSION_NAME` | 协调索引后缀，重跑时修改以隔离上次状态 |
+| `RFS_SESSION_NAME` | 协调索引后缀；重跑时修改以隔离上次状态 |
+
+#### 部署与启动
 
 ```bash
-bash run.sh   # 创建 ConfigMap、Secret、Job、PVC 并启动 Worker
+# 创建 namespace（如不存在）
+kubectl create namespace <namespace>
+
+# 启动 RFS Worker
+bash run.sh
 ```
 
 #### 动态扩缩容
