@@ -14,6 +14,9 @@
             * [故障恢复](/ues/user_guide/opensearch/development_guide/fault_recovery.md)
             * [功能文档](/ues/user_guide/opensearch/development_guide/functional_doc.md)
         * [公网访问](/ues/user_guide/opensearch/network_access.md)
+        * 数据备份
+            * [快照管理](/ues/user_guide/opensearch/snapshot_management.md)
+            * [快照密钥管理](/ues/user_guide/opensearch/snapshot_key_management.md)
         * 迁移方案
             * [Elasticsearch to Opensearch](/ues/user_guide\opensearch\migration_plan.md)
     * Elasticsearch
