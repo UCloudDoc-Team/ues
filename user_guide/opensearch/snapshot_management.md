@@ -6,11 +6,11 @@ Opensearch快照管理分为三个环节：
 2、创建仓库
 3、创建快照
 
-请按上述顺序依次执行，第一步添加快照密钥在UCloud控制台中操作，可参考[快照密钥管理文档](/ues/user_guide/opensearch/snapshot_key_management.md)；第二步创建仓库与第三步创建快照需登录OpenSearch的Dashboard中操作，可参考下文。
+请按上述顺序依次执行，第一步添加快照密钥在UCloud控制台中操作，可参考[快照密钥管理文档](https://docs.ucloud.cn/ues/user_guide/opensearch/snapshot_key_management)；第二步创建仓库与第三步创建快照需登录OpenSearch的Dashboard中操作，可参考下文。
 
 ## 创建仓库
 
-登录DashBoard（具体登录方法可参考[说明文档](/ues/user_guide/opensearch/dashboard)）
+登录DashBoard（具体登录方法可参考[说明文档](https://docs.ucloud.cn/ues/user_guide/opensearch/dashboard)
 
 左侧导航栏进入“Snapshot Management”
 
